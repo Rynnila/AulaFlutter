@@ -24,7 +24,7 @@ class NewMenu extends StatelessWidget {
                link: 'https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2022/01/03/597x330/1_cachorro-20389356.jpg',
                clique: ()=>itemSelecao(context, 4)),
                const SizedBox(
-                 height:16
+                 width:20
                ),
               menuItem(texto: "Sistema", icone: Icons.settings_system_daydream,
               clique: ()=>itemSelecao(context, 1)),
@@ -74,7 +74,7 @@ class NewMenu extends StatelessWidget {
       required String nome,
       required String email,
       required String link,
-      required VoidCallback clique,
+      required VoidCallback? clique,
     }) =>
       InkWell(
         onTap: clique,
